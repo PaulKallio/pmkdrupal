@@ -1,5 +1,6 @@
 {
   "name": "ibmpaul/salutation",
+  "license": "proprietary",
   "description": "A short salutation text to be used in drupal pages.",
   "require": {
     "php": ">=7.4",
