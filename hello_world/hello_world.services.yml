@@ -1,0 +1,16 @@
+#
+# Hello World Drupal module
+# Paul Kallio
+# 31.1.2022
+#
+services:
+  hello_world.salutation:
+    class: Drupal\hello_world\HelloWorldSalutation
+    arguments: ['@config.factory']
+    tags:
+      - { name: drupal_9_developer, priority: -100 }
+  hello_world.redirect_subscriber:
+    class: Drupal\hello_world\HelloWorldRedirectSubscriber
+    arguments: ['@current_user']
+    tags:
+      - { name: event_subsciber }

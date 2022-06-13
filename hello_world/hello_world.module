@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Hello World Drupal hook module.
+ *
+ * Paul Kallio
+ * 28.1.2022.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Hello_world_help.
+ */
+function hello_world_help($route_name, RouteMatchInterface $route_match) {
+
+  switch ($route_name) {
+    case 'help.page.hello_world':
+      $output = '';
+      $output .= '<h3>' . t('about') . '</h3>';
+      $output .= '<p>' . t('This is an example module.') . '</p>';
+      return $output;
+
+    default:
+      return "";
+  }
+}
+
+/**
+ * Hello_world_preprocess hook.
+ */
+/* function hello_world_preprocess(&$variables, $hook) {
+ * $message = 'hello_world->hook_preprocess';
+ * \Drupal::logger('hello_world')->notice($message);
+ * var_dump($hook);
+}*/

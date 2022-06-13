@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Hello World Drupal hook module.
+ *
+ * IBM
+ * Paul Kallio
+ * 10.02.2022.
+ */
+
+use Drupal\user\UserInterface;
+
+/**
+ * Hello_world_help.
+ */
+function tfa_plugin_user_login(UserInterface $account) {
+
+  dpm($account);
+  $message = 'tfa_plugin->hook_user_login';
+  \Drupal::logger('tfa_plugin')->notice($message);
+  // If the user has a NULL time zone, notify them to set a time zone.
+  if (!$account->timezone && variable_get('configurable_timezones', 1) && variable_get('empty_timezone_message', 0)) {
+    drupal_set_message(t('Configure your <a href="@user-edit">account time zone setting</a>.', array(
+      '@user-edit' => url("user/{$account->uid}/edit", array(
+        'query' => drupal_get_destination(),
+        'fragment' => 'edit-timezone',
+      )),
+    )));
+  }
+}
+

@@ -1,0 +1,63 @@
+{
+    "breadcrumbs.enabled": true,
+    "css.validate": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "full",
+    "editor.insertSpaces": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.renderWhitespace": "none",
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "off",
+    "editor.detectIndentation": true,
+    "editor.rulers": [
+      80
+    ],
+    "files.associations" : {
+        "*.inc" : "php",
+        "*.module" : "php",
+        "*.install" : "php",
+        "*.theme" : "php",
+        "*.test" : "php",
+        "*.profile": "php",
+        "*.php" : "php",
+        "*.info": "ini",
+        "*.html": "twig",
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "html.format.enable": true,
+    "html.format.wrapLineLength": 80,
+
+    "emptyIndent.removeIndent": true,
+    "emptyIndent.highlightIndent": false,
+    "emptyIndent.highlightColor": "rgba(246,36,89,0.6)",
+
+    "php.debug.executablePath": "D:\\Proge\\Dev\\xampp\\php\\php.exe",
+
+    "intelephense.telemetry.enabled": false,
+    "intelephense.completion.triggerParameterHints": true,
+    "intelephense.completion.insertUseDeclaration": true,
+    "intelephense.trace.server": "messages",
+    "intelephense.diagnostics.undefinedClassConstants": false,
+    "intelephense.diagnostics.undefinedFunctions": false,
+    "intelephense.diagnostics.undefinedConstants": false,
+    "intelephense.diagnostics.undefinedProperties": false,
+    "intelephense.diagnostics.undefinedTypes": false,
+    "intelephense.diagnostics.undefinedMethods": false,
+
+    "phpcs.enable": true,
+    "phpcs.standard": "Drupal",
+    "phpcs.executablePath" : "C:\\Users\\paulm\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat",
+
+    "composer.enabled": true,
+    "composer.executablePath": "D:\\Proge\\Dev\\Composer\\composer.bat",
+
+    "php-docblocker.gap": true,
+    "php-docblocker.useShortNames": true,
+
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+}

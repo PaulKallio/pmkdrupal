@@ -1,0 +1,11 @@
+#
+# tfa_plugin Drupal TFA Login module
+# IBM
+# Paul Kallio
+# 10.02.2022
+#
+name: TFA Plugin
+description: TFA authentication login module
+type: module
+core_version_requirement: ^9
+package: Custom

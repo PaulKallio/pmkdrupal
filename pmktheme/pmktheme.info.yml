@@ -1,0 +1,8 @@
+name: PmkTheme
+description: Drupal 9 Theme by Paul Martin Kallio
+type: theme
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - pmktheme/global-css
+  - pmktheme/global-js
